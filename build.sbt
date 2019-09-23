@@ -13,7 +13,7 @@ inThisBuild(Seq(
 lazy val commonSettings = Seq(
   scalaVersion := dottyVersion,
   crossScalaVersions := Seq(dottyVersion, scala2Version),
-  scalacOptions ++= List("-Yexplicit-nulls"),
+
   libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
 )
 
