@@ -397,7 +397,7 @@ object Read {
   import scala.util.Try
 
   def head(s: String, r: Regex): Option[(String, String)] =
-    s.trim match {
+    s.trim.nn match {
       case r(hd, tl) => Some((hd, tl))
       case _ => None
     }
